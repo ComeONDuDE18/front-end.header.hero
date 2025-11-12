@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 64px;
+
+}
+.logoContainer {
+  display: flex;
+  align-items: row;
+  justify-content: center;
+}
+.title {
+  color: green
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+    list-style-type: none;
+}
+
+
