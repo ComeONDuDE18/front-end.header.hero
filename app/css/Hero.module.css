@@ -6,24 +6,38 @@
   padding: 0 64px;
   padding-top: 244px;
   padding-bottom: 347px;
+  padding-right: 617px;
+  
 }
 
 .content {
     display: flex;
-    max-width: 1312px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 24px;
+    max-width: 759px;
+    
+    
 
 }
-.tittle {
+.title {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 56px;
   line-height: 110%;
   letter-spacing: -0.01em;
-  color: var(--color-white);
+  color: #FFFFFF;
+
+}
+
+.subtitle {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFFFF;
+  
 }
 
 
@@ -33,11 +47,11 @@
     border-radius: 8px;
     padding: 6px 12px;
     background: #4169E1;
-    font-family: var(--font-family);
+    font-family: var(--second-family);
     font-size: 18px;
     font-weight: 500;
     line-height: 150%;
-    color: var(--color-white);
+    color: #FFFFFF;
     cursor: pointer;
 }
 
