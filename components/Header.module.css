@@ -5,13 +5,17 @@
   padding: 18px 64px;
 
 }
-.logoContainer {
+
+
+.logo {
   display: flex;
-  align-items: row;
+  align-items: center; 
   justify-content: center;
 }
+
 .title {
-  color: green
+  color: green;
+
 }
 
 .navigation {

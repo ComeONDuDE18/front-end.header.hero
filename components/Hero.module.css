@@ -1,0 +1,43 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 64px;
+  padding-top: 244px;
+  padding-bottom: 347px;
+}
+
+.content {
+    display: flex;
+    max-width: 1312px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+
+}
+.tittle {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: var(--color-white);
+}
+
+
+.moreButton {
+    margin-top: 32px;
+    border: 1px solid #4169E1;
+    border-radius: 8px;
+    padding: 6px 12px;
+    background: #4169E1;
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--color-white);
+    cursor: pointer;
+}
+

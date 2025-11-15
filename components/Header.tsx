@@ -1,18 +1,15 @@
 import css from './Header.module.css';
 import Link from 'next/link';
-import Image from 'next/image';
+
 
 const Header = () => {
   return (
     <header className={css.header}>
-      <div>
+      <div className={css.logo}>
         <Link href="/">
-          <Image
-            src="/logo.png"
-            alt="Подорожники"
-            width={120}
-            height={40}
-          />
+          <svg width="28" height="28" aria-hidden="true">
+            <use href="/icon.svg#icon-plant" />
+          </svg>
           <span className={css.title}>Подорожники</span>
         </Link>
       </div>

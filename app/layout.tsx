@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
-import { Geist, Geist_Mono } from "next/font/google";
+import Hero from "@/components/Hero";
+import { Nunito_Sans, Sora } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const nunito = Nunito_Sans({
   subsets: ["latin"],
+  variable: "--second-family",
+  weight: ["400", "500", "600", "700"]
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const sora = Sora({
   subsets: ["latin"],
+  variable: "--first-family",
+   weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -25,8 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${nunito.variable} ${sora.variable}`}>
         <Header />
+        <Hero />
         <main>{children}</main>
         <footer>
           <p>
