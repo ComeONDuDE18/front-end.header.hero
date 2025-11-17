@@ -28,8 +28,10 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${nunito.variable} ${sora.variable}`}>
+        <div className="heroSection"> 
         <Header />
         <Hero />
+        </div>
         <main>{children}</main>
         <footer>
           <p>

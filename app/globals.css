@@ -54,6 +54,14 @@ a {
   padding: 0 64px;
 }
 
+.heroSection {
+  background: url(../public/images/bg.jpg);
+  width: 100%;
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
