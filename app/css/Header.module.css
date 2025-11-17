@@ -32,15 +32,29 @@
 }
 
 .navLink {
-font-family: var(--second-family);
-font-weight: 400;
-font-size: 18px;
-line-height: 150%;
-color: #FFFFFF;
+  font-family: var(--second-family);
+  padding: 0 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+  transition: background-color,border 0.2s ease-in-out;
+  border-radius: 8px
 }
 
-.signInBtn {
+.navLink:focus,
+.navLink:hover {
   border: 1px solid #FFFFFF;
+}
+
+.navLink:active {
+  background-color: #4C4C4C;
+  border: 1px solid #FFFFFF;
+}
+
+
+.signInBtn {
+  border: 1px solid rgb(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 4px 10px;
   width: 58px;
@@ -50,7 +64,19 @@ color: #FFFFFF;
   font-size: 18px;
   line-height: 150%;
   color: #FFFFFF;
-  background: opacity(10%) #FFFFFF;
+  background-color: rgb(255, 255, 255, 0.1);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.signInBtn:hover,
+.signInBtn:focus{
+  background-color: #4169E1;
+  border: 1px solid #4169E1 ;
+}
+
+.signInBtn:active {
+background-color: #1A2A5A;
+border: 1px solid #1A2A5A;
 }
   .signUpBtn {
   border: 1px solid #FFFFFF;
@@ -58,10 +84,23 @@ color: #FFFFFF;
   padding: 4px 10px;
   width: 113px;
   height: 35px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   font-family: var(--second-family);
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
   color: #000000;
+  transition: background-color 0.2s ease-in-out;
   }
+
+  .signUpBtn:hover,
+  .signUpBtn:focus{
+    background-color: #7F7F7F;
+    color: #FFFFFF;
+  }
+
+  .signUpBtn:active {
+    background-color: #4C4C4C;
+    border: 1px solid #7F7F7F;
+  }
+  
