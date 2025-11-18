@@ -25,21 +25,35 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  return (
-    <html lang='en'>
+ return (
+    <html lang="en">
       <body className={`${nunito.variable} ${sora.variable}`}>
-        <div className="heroSection"> 
-        <Header />
-        <Hero />
+             <div className="videoWrapper">
+        <video
+          className="backgroundVideo"
+          src="/images/herovideo.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+        <div className="videoOverlay" />
+
+        <div className="videoContent">
+          <Header />
+          <Hero />
         </div>
-        <main>{children}</main>
-        <footer>
-          <p>
-            Created <time dateTime='2025'>2025</time>
-          </p>
-        </footer>
+
+      </div>
+          <main>{children}</main>
+          <footer>
+            <p>
+              Created <time dateTime="2025">2025</time>
+            </p>
+          </footer>
+     
+
       </body>
     </html>
   );
-};
-
+}
